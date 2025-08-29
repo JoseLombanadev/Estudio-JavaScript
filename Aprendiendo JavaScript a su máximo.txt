@@ -1,15 +1,22 @@
 Aprendiendo JavaScript a su máximo explendor.
 
-.................................................................................
+..................................................................................
 Horas Echas:
 
  8/26/2025
    H1
    H1
    H1  
----------------------------------------------------------------------------------
-08/27/2025
-   H  
+----------------------------------------------------------------------------------
+08/28/2025
+   H1
+   M55    
+----------------------------------------------------------------------------------
+08/29/2025
+   M5 
+   H1 
+   H1
+
 
 .................................................................................
 
@@ -345,6 +352,290 @@ Los guiones no están permitidos en JavaScript. Están reservados para restas.
         Los programadores de JavaScript tienden a utilizar el formato camel case que comienza con una letra minpuscula:
 
         Nombre, Apellido, MasterCard, InterCity.
+
+----------------------------------------------------------------------------------
+
+
+Comentarios de JavaScript
+
+        Los comentarios de JavaScript se pueden utilizar para explicar el código JavaScript y hacerlo más legible.
+
+        Los comentarios de JavaScript también  se pueden usar para evitar la ejecución cuando se prueba código alternativo.
+
+
+Comentarios de una sola línea
+
+
+        Los comentarios de una sola linea comienzan con //.
+        Cuanquier texto entre // y el final de la linea será ignorado por JavaScript (no se ejecutará).
+        Este ejmplo utiliza un comentario de una sola línea antes de cada línea de código:
+
+
+Ejemplo:
+
+        // Cambiar encabezado:
+
+        Document.getElemntById("myH").innerHTML = "My First Page";
+
+        // Cambiar párrafo:
+
+        Document.getElemntById("myp").innerHTML = "My first paragraph";
+
+
+Comentarios de varias líneas
+
+
+        Los comentaris de varias lineas comienzan con /* y terminan con */ .
+        Cualquier texto entre /* y */ ser+a ignorado por JavaScript.
+        Este ejemplo utiliza un comentario de varias líneas (un bloque de comentarios) Para explicar el código:
+
+
+Ejemplo:
+
+        /*
+        El código a continuación cambiará el encabezado con id = "myH" y el párrafo con id = "myP" en mi página web:
+        */
+
+        document.getElementById("myH").innerHTML = "My First Page";
+        document.getElementById("myP").innerHTML = "My first paragraph.";
+
+----------------------------------------------------------------------------------
+Lo más común es usar comentarios de una sola línea.
+Los comentarios de bloque se suelen usar para documentación formal.
+----------------------------------------------------------------------------------
+
+
+Variables de JavaScript
+
+
+        Las variables son contenedores para lamacenar datos
+
+        Las variables de JavaScript se pueden declarar de cuatro maneras:
+
+
+                - Automáticamente
+                - Usando var 
+                - Usando let
+                - Usando const
+
+----------------------------------------------------------------------------------
+Nota:
+
+        Se considera una buena práctica de programción declarar siempre las variables antes de usarlas.
+
+..................................................................................
+Nota:
+
+        La var palabra clave se utilizó en todo el código JavaScript desde 1995 hasta 2015.
+
+        Las palabras clave let y const se agreagaron a JavaScript en 2015.
+
+        La var palabra clave sólo debe utilizarse en código escrito para navegadores antiguos.
+----------------------------------------------------------------------------------
+
+
+Ejemplo usando let
+
+    let x = 5;
+    let y =6;
+    let z = x + y;
+
+
+
+Ejemplo usando const
+
+    const x = 5;
+    const y = 6;
+    const z = x + y;
+
+Ejemplo mixto
+
+    const price1 = 5;
+    const price2 = 6;
+    let total = price1 + price2;
+
+
+¿Cuándo utilizar var, let o const?      
+
+
+        . Siempre declare variables
+        . Úselo siempre const si no se debe cambiar el valor.
+        . Úselo siempre const si no se debe cambiar el tipo (matrices y objetos)
+        . Úselo solo let si no puede usarlo const
+        . Úselo solo var si DEBE admitir navegaroes antiguos.
+
+
+----------------------------------------------------------------------------------
+Nota:
+        Las variables son contenedores para almacenar valores.
+..................................................................................
+Nota:
+        Los identificadores de JavaScript distinguen entre mayúsculas y minúsculas.
+----------------------------------------------------------------------------------
+
+
+
+El operador de asignación
+
+    En JavaScript, el signo igual (=) es un operador de "asignación", no un operador "igual a".
+    Esto es diferente  del álgebra. Lo siguiente no tiene sentido en álgebra:
+
+    x = x + 5
+
+
+    Sin embargo, en JavaScript tiene todo el sentido: asigna el valor de x + 5 a x.
+    (Calcula el valor de x + 5 y pone el resultado en x. El valor de x se incrementa en 5.)
+
+----------------------------------------------------------------------------------
+Nota:
+      El operador "igual a" se escribe como == en JavaScript.
+----------------------------------------------------------------------------------
+
+
+Tipos de datos de JavaScript
+
+    Las variables de JavaScript pueden contener números como 100 y valores de texto como "John Doe".
+
+---------------------------------------------------------------------------------
+Nota: 
+
+        No se puede volver a declarar una variable declarada con let o const .
+        Esto no funcionará:
+
+            let carNem = "Volvo";
+            let carName;
+..................................................................................
+Nota:
+
+        Si coloca un número entre comillas, elresto de los números se trarán como cadenas y se concatenarán
+----------------------------------------------------------------------------------
+
+
+¿Qué es bueno?
+
+    let y const tienen alcance de bloque.
+
+    let y const no puede ser redeclarada.
+
+    let y const debe declararse antes de su uso.
+
+    let y no const se vincula a this.
+
+    let y no se const es un.
+
+
+¿Qué no está bien?
+
+    var no es necesario declararlo.
+
+    var se es un.
+
+    var se une a esto.
+
+
+
+¿Cuándo utilizar const en JavaScript?
+
+    Siempre declara una variable con const cuando sepas que su valor no debe modificarse.
+    Uselo const cuando declare:
+
+
+            - Una nueva martriz
+            - Una nuevo objeto 
+            - Una nueva expresión regular
+
+
+Sintaxis de funciones de JavaScript
+
+        function name(p1,p2,p3) {// code}
+
+
+Cómo crear un objeto JavaScript
+
+
+        Un literal de objeto es una forma concisa de crear un objeto.
+        Un objeto literal es una lista  de pares  clave: valor dentro de llaves {} :
+
+
+            {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"}
+
+----------------------------------------------------------------------------------
+
+Primitivas de JavaScript
+
+
+        JavaScript define 7 tipos de tipos de datos primitivos::
+
+        Tipo                           Valor de ejemplo
+
+        string                         "Hola"
+
+        number                          3.14
+
+        boolean                         verdadero
+
+        bigint                          112345678901234
+
+        null                            nulo
+
+        undefined                       indefinido
+
+        symbol                          simbolo 
+
+----------------------------------------------------------------------------------
+
+
+
+Eventos HTML 
+
+
+    Un evento HTML puede ser algo que hace el navegador o algo que hace un usuario.
+
+
+    HTML permite que se agreguen atributos de controlador de eventos, con código JavaScript , a elementos HTML.
+
+    Entre comillas simples:
+
+        <element event=´some JavaScript´>
+
+        
+    Entre comillas dobles:
+
+        <element event="some JavaScript">
+
+
+
+    En el siguiente ejemplo, onclick se agrega un atributo (con código) a un <button> elemento:
+
+
+    Ejemplo:
+
+
+            <button onclick="document.getElemntById(´demo´).innerHTML = Date()">The time is?</button>
+
+
+        En el ejemplo anterior, el código JavaScript cambia el contenido del elemento con id="demo".
+
+        En el  siguiente ejemplo, el código cambia el contenido de su propio elemneto (usando this.innerHTML ):
+
+        
+        Ejemplo:
+
+                <button onclick="this.innerHTML = Date()">The time is?</button>
+
+
+----------------------------------------------------------------------------------
+El código JavaScript suele tener varias líneas. Es más común ver atributos de evento que invocan funciones:
+----------------------------------------------------------------------------------
+
+
+
+    Ejemplo:
+
+
+            <button onclick="displayDate()">The time is?</button>
+
+
 
 
 
